@@ -9,7 +9,7 @@ const Hero = () => {
           COMING SOON
         </p>
         <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
-          PRIME MARKET
+          PRIMEMARKET
         </h1>
         <div className='flex justify-center items-center'>
           <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>
@@ -23,7 +23,7 @@ const Hero = () => {
             loop
           />
         </div>
-        <p className='md:text-2xl text-xl font-bold text-gray-500'>Your trusted marketplace for cars and properties in Sri Lanka.</p>
+        <p className='md:text-2xl text-xl font-bold text-gray-500'>Your trusted marketplace for vehicles and properties in Sri Lanka.</p>
         <button 
         onClick={() =>
           document.getElementById("about").scrollIntoView({ behavior: "smooth" })

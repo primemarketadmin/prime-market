@@ -15,7 +15,7 @@ const About = () => {
 
           <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>What We Do</h1>
           <p>
-          At PrimeMarket, we make buying and selling vehicles and real estate seamless. We provide an easy-to-use platform where users can create listings, explore properties and vehicles, and connect directly with potential buyers or sellers. Our in-built features—such as advanced filters, private chat, scheduling tools, and real-time notifications—streamline the transaction process. By prioritizing user privacy and trust, we ensure sensitive details remain secure until both parties are ready to move forward.
+          At PrimeMarket, we make buying and selling vehicles and real estate seamless. We provide an easy-to-use platform where users can create listings, explore properties and vehicles, and connect directly with potential buyers or sellers. Our in-built features,such as advanced filters, private chat, scheduling tools, and real-time notifications,streamline the transaction process. By prioritizing user privacy and trust, we ensure sensitive details remain secure until both parties are ready to move forward.
           </p>
           <button
                   onClick={() =>
