@@ -16,7 +16,7 @@ const Newsletter = () => {
     }
 
     try {
-      await addDoc(collection(db, "subscribers"), {
+      await addDoc(collection(db, "waitingList"), {
         email: email,
         createdAt: new Date(),
       });
