@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { db } from "../firebase"; // adjust path if needed
-import { collection, addDoc } from "firebase/firestore";
+//import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+
 
 const Newsletter = () => {
   const [email, setEmail] = useState("");
@@ -16,14 +18,15 @@ const Newsletter = () => {
     }
 
     try {
-      await addDoc(collection(db, "waitingList"), {
+      await addDoc(collection(db, "waitinglist"), {
         email: email,
-        createdAt: new Date(),
+        //createdAt: new Date(),
+        createdAt: serverTimestamp(),
       });
       setStatus("Thanks for subscribing! :)");
       setEmail(""); // clear input after success
     } catch (error) {
-      console.error("Error adding email:", error);
+      console.error("Error adding email:", error.message);
       setStatus("Something went wrong. Try again.");
     }
   };
